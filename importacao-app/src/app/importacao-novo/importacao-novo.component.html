@@ -1,0 +1,12 @@
+<div>
+  <h3>Adicionar Novo Produto</h3>
+</div>
+<form class="example-container" [formGroup]="importacaoForm">
+  
+  <mat-form-field class="app-form-control">
+    <ngx-mat-file-input placeholder="Anexos" formControlName="anexos"></ngx-mat-file-input>
+    <mat-icon matSuffix>folder</mat-icon>
+  </mat-form-field>
+
+  <button  mat-flat-button color="accent" (click)="onSubmit()" > Salvar</button>
+</form>
